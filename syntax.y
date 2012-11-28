@@ -55,13 +55,13 @@
  CALL
  ID
 %type<id> ID
-%right POWEROP
-%left  MULOP DIVOP 
-%left<addop_type>  ADDOP
-%nonassoc RELOP 
-%nonassoc NOTOP 
-%left  ANDOP
 %left  OROP
+%left  ANDOP
+%nonassoc NOTOP 
+%nonassoc RELOP 
+%left<addop_type>  ADDOP
+%left  MULOP DIVOP 
+%right POWEROP
 %locations
 %union{
   char *id;
