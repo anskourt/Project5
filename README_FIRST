@@ -1,0 +1,10 @@
+
+actions:
+
+1.flex lexical.lex
+
+2.bison -dvt syntax.y
+
+3.gcc lex.yy.c syntax.tab.c table.c -o final -lfl
+
+4../final
